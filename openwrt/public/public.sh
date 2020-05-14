@@ -15,7 +15,7 @@ vssr_url='https://github.com/jerrykuku/luci-app-vssr.git'        # vssr地址
 vssr_plus_rely='https://github.com/Leo-Jo-My/my.git'             # vssr_plus 依赖
 vssr_plus='https://github.com/Leo-Jo-My/luci-app-vssr-plus.git'  # vssr_plus 地址
 filter_url='https://github.com/destan19/OpenAppFilter.git'       # AppFilter 地址
-helloworld_url='https://github.com/fw876/helloworld'       # helloworld ssr plus 地址
+helloworld_url='https://github.com/fw876/helloworld'       # helloworld ssr plus 包地址
 # 命令
 # echo "修改机器名称"
 # sed -i "s/OpenWrt/$device_name/g" package/base-files/files/bin/config_generate
