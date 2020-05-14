@@ -2,9 +2,9 @@
 # 必须的文件
 # device_name='G-DOCK'      # 设备名，放到了单独设备的sh文件中了
 # wifi_name="OpenWrt"       # Wifi 名字 ,放到了单独设备的sh文件中了
-lan_ip='192.168.2.1'        # Lan Ip地址
+lan_ip='192.168.9.1'        # Lan Ip地址
 utc_name='Asia\/Shanghai'   # 时区
-delete_bootstrap=true       # 是否删除默认主题 true 、false
+delete_bootstrap=false       # 是否删除默认主题 true 、false
 default_theme='argon_mc1'   # 默认主题 结合主题文件夹名字
 theme_argon='https://github.com/sypopo/luci-theme-argon-mc.git'  # 主题地址
 openClash_url='https://github.com/vernesong/OpenClash.git'       # OpenClash包地址
@@ -15,6 +15,7 @@ vssr_url='https://github.com/jerrykuku/luci-app-vssr.git'        # vssr地址
 vssr_plus_rely='https://github.com/Leo-Jo-My/my.git'             # vssr_plus 依赖
 vssr_plus='https://github.com/Leo-Jo-My/luci-app-vssr-plus.git'  # vssr_plus 地址
 filter_url='https://github.com/destan19/OpenAppFilter.git'       # AppFilter 地址
+helloworld_url='https://github.com/fw876/helloworld'       # helloworld ssr plus 地址
 # 命令
 # echo "修改机器名称"
 # sed -i "s/OpenWrt/$device_name/g" package/base-files/files/bin/config_generate
@@ -90,3 +91,6 @@ echo 'CONFIG_PACKAGE_luci-i18n-oaf-zh-cn=y'  >> .config
 # git clone $vssr_plus_rely package/lean/luci-app-vssr-plus
 # echo 'CONFIG_PACKAGE_luci-app-vssr-plus=y' >> .config
 # echo 'CONFIG_PACKAGE_luci-i18n-vssr-plus-zh-cn=y'  >> .config
+
+echo '添加helloworld包'
+git clone $helloworld_url package/SSR_Plus
